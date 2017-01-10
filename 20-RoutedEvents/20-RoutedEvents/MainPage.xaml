@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="_20_RoutedEvents.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_20_RoutedEvents"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Orientation="Vertical" PointerPressed="StackPanel_PointerPressed">
+            <TextBlock Text="Ejemplo Routed Events"/>
+            <Rectangle x:Name="rectanguloRojo" Fill="Red" Height="100" Margin="5" PointerPressed="rectangulo_PointerPressed"/>
+            <Rectangle x:Name="rectanguloAzul" Fill="Blue" Height="100" Margin="5" PointerPressed="rectangulo_PointerPressed"/>
+            <Rectangle x:Name="rectanguloNaranja" Fill="Orange" Height="100" Margin="5" PointerPressed="rectangulo_PointerPressed"/>
+
+            <TextBlock x:Name="lblStack"/>
+            <TextBlock x:Name="lblRectangulo"/>
+        </StackPanel>
+        </Grid>
+</Page>
